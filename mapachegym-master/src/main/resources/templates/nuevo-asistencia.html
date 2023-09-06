@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Membresía</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/nuevo-asistencia">Registrar nueva asistencia </a></li>
+        </ul>
+    </nav>
+    
+    <!-- Formulario de Membresía -->
+    <h2>Registrar Nueva Membresía</h2>
+    <form th:action="@{/guardar-asistencia}" th:object="${asistencia}" method="post">     
+        <div>
+            <label for="idAsientencia">idAsientencia:</label>
+            <input type="text" id="idAsientencia" name="idAsientencia" th:field="*{idAsientencia}" required>
+        </div>
+        
+        <div>
+            <label for="dia">Día:</label>
+            <input type="text" id="dia" name="dia" th:field="*{dia}" required>
+        </div>
+        <div>
+            <label for="horaInicio">Hora de Inicio:</label>
+            <input type="text" id="horaInicio" name="horaInicio" th:field="*{horaInicio}" required>
+        </div>
+        <div>
+            <label for="horaFin">Hora de Fin:</label>
+            <input type="text" id="horaFin" name="horaFin" th:field="*{horaFin}" required>
+        </div>
+        <div>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" th:field="*{fecha}" required>
+        </div>
+
+       
+        <!-- Agregar aquí campos relacionados con Cliente y Pago -->
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>

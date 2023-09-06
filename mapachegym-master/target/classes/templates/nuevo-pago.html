@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pago</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/nuevo-pago">Registrar Pago</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Formulario de Pago -->
+    <h2>Registrar Nuevo Pago</h2>
+    <form th:action="@{/guardar-pago}" th:object="${pago}" method="post">
+        <div>
+            <label for="idPago">idPago:</label>
+            <input type="text" id="idPago" name="fidPago" th:field="*{idPago}" required>
+        </div>
+        <div>
+
+        <div>
+            <label for="fechaPago">Fecha de Pago:</label>
+            <input type="date" id="fechaPago" name="fechaPago" th:field="*{fechaPago}" required>
+        </div>
+        <div>
+            <label for="validez">Validez:</label>
+            <input type="date" id="validez" name="validez" th:field="*{validez}" required>
+        </div>
+        <div>
+            <label for="valorAbonado">Valor Abonado:</label>
+            <input type="number" step="0.01" id="valorAbonado" name="valorAbonado" th:field="*{valorAbonado}" required>
+        </div>
+        <!-- Agregar aquí campos relacionados con Membresía y Cliente -->
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
