@@ -1,9 +1,15 @@
 body {
-    background: url("/images/fondo.jpg") no-repeat center center fixed;
+
+    margin: 0;
+    padding: 0;
+
+    background: url("/images/h1_hero.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
     font-family: 'Lato', sans-serif;
 }
@@ -17,7 +23,10 @@ body {
 }
 
 .navbar-brand {
-    font-size: 35px;
+    font-size: 60px;
+    padding: -20px;
+    color: brown;
+
 }
 
 /* ---------------------------------------------------
@@ -30,15 +39,21 @@ body {
 }
 
 @media (min-width: 576px) {
-    .card-columns { column-count: 2; }
+    .card-columns {
+        column-count: 2;
+    }
 }
 
 @media (min-width: 768px) {
-    .card-columns { column-count: 3; }
+    .card-columns {
+        column-count: 3;
+    }
 }
 
 @media (min-width: 992px) {
-    .card-columns { column-count: 4; }
+    .card-columns {
+        column-count: 4;
+    }
 }
 
 /* ---------------------------------------------------
