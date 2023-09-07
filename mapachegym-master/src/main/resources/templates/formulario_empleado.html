@@ -9,7 +9,7 @@
         <style>
                     /* Estilos para la navegación */
 nav {
-    background-color: #007bff;
+    background-color:transparent;
     padding: 10px;
 }
 
@@ -81,6 +81,63 @@ form {
 .btn-primary:hover {
     background-color: #0056b3;
 }
+
+/* Estilos para el formulario */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    background-image: url("/images/landing-main.jpg");
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    border: none;
+            border-radius: 10px;
+            min-height: 11rem;
+            margin: auto;
+            max-width: 50%;
+            padding: .5rem;
+            background: rgba(255, 255, 255, 0.7);
+            /* Color de fondo transparente */
+            backdrop-filter: blur(5px);
+            /* Efecto de desenfoque del fondo */
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 97%;
+    padding: 9px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.nicoeditar{
+    font-weight: 500;
+    color: rgba(155, 39, 39, 0.873);
+}
+   
         </style>
         <!-- Navbar -->
         <nav>
@@ -91,7 +148,7 @@ form {
         </nav>
 
         <!-- Formulario de Empleado -->
-        <h2>Registrar Nuevo Empleado</h2>
+        <h2 class="nicoeditar">Registrar Nuevo Empleado</h2>
         <form th:action="@{/guardar-empleado}" th:object="${empleado}"
             method="post">
             <div class="  wrap-input100 validate-input">

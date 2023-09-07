@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
     <!-- Navbar -->
     <nav>
         <ul>
@@ -17,7 +18,7 @@
     </nav>
 
     <!-- Formulario de Empleado -->
-    <h2>Registrar Nuevo Empleado</h2>
+    <h2 class="nicoeditar">Registrar Nuevo Empleado</h2>
     <form th:action="@{/guardar-empleado}" th:object="${empleado}" method="post">
         <div>
             <label for="id">id:</label>
