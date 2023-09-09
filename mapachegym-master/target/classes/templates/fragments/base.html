@@ -62,11 +62,11 @@
 
         .fontnico {
             font-family: 'Roboto Condensed', sans-serif;
-            color: black;
+            color:#fff;
             font-weight: lighter;
             padding: 50px;
             margin: 20px;
-            font-size: 50px;
+            font-size: 88px;
             text-align: center ;
 
 
@@ -182,8 +182,9 @@
 
 
         /* Estilo para las tarjetas */
-        .card {
+        .card  {
             transition: transform 0.2s;
+            background-color:#73C6B6 ;
             /* Agrega una transición suave */
         }
 
@@ -194,49 +195,25 @@
         }
 
         /* secciones estan aca */
-
-        .section {
-            padding: 50px 0;
-            text-align: center;
+        .h2nico{
+            color:#2ECC71;
+            font-size: 80px;
         }
-
-        .section h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 40px;
-            color: black;
-            
-        }
-
-        .section p {
-            font-size: 17px;
-            margin: 8px;
-            color: black;
-            padding: 15px;
-        }
-
-        .section-image {
-            background-image: url('/images/nic.jpg');
-            /* Reemplaza 'fondo.jpg' con la URL de tu imagen de fondo */
-            background-size: cover;
-            background-position: center;
+        .pnico{
             color: #fff;
-            /* Cambia el color del texto según tu preferencia */
-            padding: 50px 0;
+            font-size: 25px;
         }
-
-        .section-image img {
-            max-width: 100%;
-            height: auto;
+        .h2nico:hover{
+            color:#F39C12  ;            
+            cursor: pointer;
         }
-        .card-title{
-            font-size: 18px;
-            padding: 15px;
+ 
+        
+        .imgnico{
+            height:200px ;
+            width: 200px;
         }
-        .col-md-12 text-center{
-            padding: 50px;
-        }
+       
     </style>
 
 
@@ -259,7 +236,7 @@
 
             <!-- Tarjeta 1 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card ">
                     <img src="/images/comment_1.png" class="card-img-top" alt="Imagen de la tarjeta 1">
                     <div class="card-body">
                         <h5 class="card-title"> ACONDICIONAMIENTO FISICO</h5>
@@ -302,8 +279,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2>GESTIONA, FIDELIZA Y CONTROLA A TUS SOCIOS</h2>
-                    <p> Es una solución integral que resuelve la gestión de reservas de turnos, la administración de planes de entrenamiento, y el control de socios de forma rápida e intuitiva. Sin complicaciones y con la mejor experiencia para tus clientes.</p>
+                    <h2 class="h2nico">GESTIONA, FIDELIZA Y CONTROLA A TUS SOCIOS</h2>
+                    <p class="pnico"> Es una solución integral que resuelve la gestión de reservas de turnos, la administración de planes de entrenamiento, y el control de socios de forma rápida e intuitiva. Sin complicaciones y con la mejor experiencia para tus clientes.</p>
                 </div>
             </div>
             <div class="row">
@@ -338,61 +315,7 @@
             </div>
         </div>
     </section>
-    <!-- Sección con Imagen y Cards en Columnas: -->
-    <section class="section section-image">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <!-- Tres Cards en el lado izquierdo -->
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 1</h5>
-                            <p class="card-text">Contenido de la Card 1.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 2</h5>
-                            <p class="card-text">Contenido de la Card 2.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 3</h5>
-                            <p class="card-text">Contenido de la Card 3.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <!-- Imagen del medio -->
-                    <img src="/images/nic2.jpg" alt="Imagen de Netbook" class="img-fluid">
-                </div>
-                <div class="col-md-3">
-                    <!-- Tres Cards en el lado derecho -->
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 4</h5>
-                            <p class="card-text">Contenido de la Card 4.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 5</h5>
-                            <p class="card-text">Contenido de la Card 5.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 6</h5>
-                            <p class="card-text">Contenido de la Card 6.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
+ 
 
 
 
@@ -400,7 +323,7 @@
 
     <!-- Imágenes en una cuadrícula -->
     <div class="container mt-5">
-        <h2 class="fontnico">Imágenes Destacadas</h2>
+        <h2 class="fontnico">GIMNASIO</h2>
         <div class="row">
             <div class="col-md-4 mb-6">
                 <img src="/images/imag1.png" alt="Imagen 1" class="img-fluid custom-image">

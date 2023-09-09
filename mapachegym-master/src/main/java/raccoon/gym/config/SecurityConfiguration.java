@@ -31,8 +31,16 @@ public class SecurityConfiguration {
 								"/lista-empleado", "/editar-empleado", "/nuevo-membresia", "/formulario_membresia",
 								"/lista-membresia", "/editar-membresia", "/nuevo-cliente", "/formulario_cliente",
 								"/lista-cliente", "/editar-cliente", "/nuevo-asistencia", "/formulario_asistencia",
-								"/lista-asistencia", "/editar-asistencia", "/nuevo-pago", "/formulario_pago","/editar-pago", "/lista-pago","/registro", "/css/*", "/images/*", "/error")
+								"/lista-asistencia", "/editar-asistencia", "/nuevo-pago", "/formulario_pago",
+								"/editar-pago", "/lista-pago", "/registro", "/css/*", "/images/*", "/error")
 						.permitAll()
+
+						.requestMatchers("membresia/", "/empleado", "/pago", "/cliente/", "/asistencia/")
+						.hasRole("Administrador")
+						.requestMatchers("home/")
+						.hasRole("Usuario")
+						.requestMatchers("asistencia/","cliente/")
+						.hasRole("Instructor")
 						.requestMatchers("/empleado/*").authenticated()
 						.anyRequest().authenticated())
 				.formLogin((form) -> form
